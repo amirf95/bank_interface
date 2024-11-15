@@ -80,12 +80,12 @@ class Card {
     }
 }
 
-// Example Users and Accounts
-const user1 = new User("John", "Doe", "john.doe@example.com", "1234567890", "1234");
+// Example Users and Accounts static users
+const user1 = new User("Emir", "Fenina", "feninaamir@example.com", "1234567890", "1234");
 const account1 = new BankAccount("ACC123456", 1000);
 user1.setBankAccount(account1);
 
-const user2 = new User("Jane", "Smith", "jane.smith@example.com", "0987654321", "2002");
+const user2 = new User("bekir", "rassil", "blabla@example.com", "0987654321", "2002");
 const account2 = new BankAccount("ACC654321", 500);
 user2.setBankAccount(account2);
 
