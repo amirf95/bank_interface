@@ -1,0 +1,305 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000; 
+}
+/*BUTTONS NAVBAR */
+
+/* For top-left home button */
+.Home_button,.User_icon {
+    position: absolute;
+    top: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+    backdrop-filter: blur(8px);
+}
+
+/* specific user icon position  */
+.User_icon{
+    right: 40px; /* Adjust icon position */
+}
+/*specific home button position*/
+.Home_button {
+    left : 40px;
+}
+/*hover effects*/
+.Home_button:hover, .User_icon:hover {
+    transform: scale(1.1);
+    background-color: #0ca6e2;
+}
+
+
+
+/*the globe icon*/
+.top-right-icon-button{
+    /*position: absolute;
+    top: 20px;
+    right: 35px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3)!important;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    backdrop-filter: blur(8px);/*adjust blurity in here*/
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+.top-right-icon-button:hover {
+    background-color: #0ca6e2;
+    transform: scale(1.1);
+
+}
+
+
+body {
+    background-image: url(images/background.jpg);
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #fff;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+
+/*user info box  */
+.User_info{
+    position: absolute;
+    right: 30px;
+    top:100px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease , opacity 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 350px;
+    margin-bottom: 20px;
+}
+.User_info:hover {
+    background-color: rgba(0, 172, 226, 0.5);
+    transform: scale(1.05);
+}
+.User_info h1{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.info-pair{
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 8px; 
+}
+
+.info-pair1 p:first-child {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 16px; 
+}
+/*Box for the text*/
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2) ;
+    color: rgb(11, 11, 11);
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width:  400px;
+    backdrop-filter: blur(10px);
+    margin-bottom: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+.container h1 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.container p {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+/*the input money button in the withdrawl page*/
+.container input[type="number"] {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.6);
+    color: #333;
+}
+
+/*Submit button*/
+.container button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s,transform 0.3s;
+}
+
+/* Submit button hover effect */
+.container button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slight scale for hover effect */
+}
+/*the alleignment of title and container*/
+.orientation {
+display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full height to center vertically */
+}
+.bank-name{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.container input[type="password"] {
+    width: 200px;
+    height: 20px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+
+/* color of the submit button*/
+.container button:hover {
+    background-color: #45a049; 
+}
+
+
+.message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsivness */
+@media screen and(min-width: 1370px){
+    /* the user info size modification not overwriting  */
+    .orientation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .User_info{
+        max-width: none;
+        width: 45%;
+        padding: 20px;
+        text-align: left;
+        position: static;
+        margin-right: 5%;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 45%;
+        max-width: none;
+        padding: 20px;
+        text-align: left;
+        margin-left: 5%;
+        position: static;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjustments for tablets and smaller devices */
+    .container, .User_info {
+        max-width: none; /* Move user info box more central for smaller screens */
+        width: 50%; /* Adjust width to 80% for smaller screens */
+    }
+
+    /* Make input fields more flexible */
+    .container input[type="number"],
+    .container input[type="password"],
+    .container button {
+        width: 50%; /* Full width of the container */
+    }
+
+    /* Adjust the heading font sizes */
+    .container h1,.User_info h1 {
+        font-size: 22px; /* Slightly smaller font size */
+    }
+    .info-pair {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjustments for mobile devices */
+    body {
+        flex-direction: column; /* Stack content vertically */
+        justify-content: flex-start; /* Align items to the start */
+    }
+
+    .User_info,.container {
+        padding: 20px;
+    }
+
+    
+
+    /* Adjust icon sizes for mobile */
+    .top-left-icon-button,
+    .User_icon {
+        font-size: 18px; /* Smaller icons for mobile */
+        top: 5px;
+    }
+
+
+    /* Adjust the input fields and button */
+    .container input[type="number"],
+    .container input[type="password"],
+    .container button {
+        width: 100%; /* Full width */
+    }
+
+    .container h1,.User_info {
+        font-size: 20px; /* Smaller heading */
+    }
+}
